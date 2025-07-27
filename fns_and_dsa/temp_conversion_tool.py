@@ -1,15 +1,14 @@
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
-FAHRENHEIT_TO_CELSIUS_OFFSET = 32
-CELSIUS_TO_FAHRENHEIT_OFFSET = 32  
+
 
 def fahrenheit_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius."""
-    return (fahrenheit - FAHRENHEIT_TO_CELSIUS_OFFSET) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def celsius_to_fahrenheit(celsius):
     """Convert Celsius to Fahrenheit."""
-    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + CELSIUS_TO_FAHRENHEIT_OFFSET
+    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 def main():
     """Main function to demonstrate temperature conversion."""
     temperature = int(input("Enter temperature to convert: "))
